@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relative_customlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+     >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="ALi"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gardian_prenatalList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="5dp"
+            android:text="Gardian"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/prenatallist_lmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gardian_prenatalList"
+            android:layout_marginLeft="5dp"
+            android:text="LMP"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/prenatallist_edd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prenatallist_lmp"
+            android:layout_marginLeft="5dp"
+            android:text="Edd"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/prenatallist_weekno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prenatallist_edd"
+            android:layout_marginLeft="5dp"
+            android:text="WeekNo"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"  />
+
+        <TextView
+            android:id="@+id/prenatallist_MrNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/prenatallist_weekno"
+            android:layout_marginLeft="5dp"
+            android:text="Mr no.  "
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"  />
+
+    </RelativeLayout>
+
+</LinearLayout>

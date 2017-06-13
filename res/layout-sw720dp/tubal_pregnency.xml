@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_tubal"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/text_tubal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_tubal"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/editText_Date_tubal"
+                android:layout_width="200dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/text_BST"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:hint="Year "
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_duration_tubal"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_Date_tubal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Duration : "
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_outcome_tubal"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_duration_tubal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Outcome : "
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_complications_tubal"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_outcome_tubal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Complications(Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_details_tubal"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_below="@+id/editText_complications_tubal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Details (Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_Date_tubal"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:layout_alignRight="@+id/editText_duration_tubal"
+                android:layout_alignTop="@+id/editText_Date_tubal"
+                android:text="ADD"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_save_tubal"
+        android:layout_width="250sp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_back_tubal"
+        android:layout_width="250sp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_tubal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Tubal Pregnancy"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

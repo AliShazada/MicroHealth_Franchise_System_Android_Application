@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/R_PreDel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_preDelivery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Previous Delivery "
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/Scrollview_1_previous_delivery"
+        android:layout_width="fill_parent"
+        android:layout_height="480dp"
+        android:layout_below="@+id/textView_preDelivery"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_previous_delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/text_prevDelivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Previous Delivery Date"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date_of_previous_delivery"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_prevDelivery"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:editable="false"
+                android:hint="Previous Delivery Date" >
+            </EditText>
+
+            <Spinner
+                android:id="@+id/spinner2_labour_duration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_of_previous_delivery"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/Labour_Duration_arrays"
+                android:prompt="@string/Labour_Duration_prompt" />
+
+            <Spinner
+                android:id="@+id/spiner_delivery_place"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_labour_duration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Delivery_Place_arrays"
+                android:prompt="@string/Delivery_Place_Prompt" >
+            </Spinner>
+
+            <EditText
+                android:id="@+id/editText_Hospital"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spiner_delivery_place"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Hospital Name"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView_skilled_person"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_Hospital"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Skilled Person : "
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_skilled_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_skilled_person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_skilled_person_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radio_skilled_person_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="No"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/text_duration"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_skilled_person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:hint="Duration" />
+
+            <Spinner
+                android:id="@+id/No_of_babies_prev_delivery"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_duration"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/No_of_Babies_arrays"
+                android:prompt="@string/No_of_Babies_Prompt" />
+
+            <RelativeLayout
+                android:id="@+id/Relative_Baby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/No_of_babies_prev_delivery"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="-----------------------------------"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/childs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Child(s)             : "
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/childs_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/line1"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/childs"
+                    android:text="1/1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/no_of_babies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/childs"
+                    android:layout_marginLeft="20dp"
+                    android:text="No. of Babies   : "
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/no_of_babies_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/childs"
+                    android:layout_marginLeft="30dp"
+                    android:layout_toRightOf="@+id/no_of_babies"
+                    android:text="1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sex_preDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/no_of_babies"
+                    android:layout_marginLeft="20dp"
+                    android:text="Sex :"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <RadioGroup
+                    android:id="@+id/radio_sex_PreDel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sex_preDel"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_PreDel_m"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radio_sex_PreDel_f"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="80dp"
+                        android:text="Female"
+                        android:textColor="#000000" />
+                </RadioGroup>
+
+                <Spinner
+                    android:id="@+id/spinner_baby_Status_PreDel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/radio_sex_PreDel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:entries="@array/Baby_Status_Array"
+                    android:prompt="@string/leucocyte_Prompt" />
+
+                <EditText
+                    android:id="@+id/EditText_baby_weight_PreDel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_baby_Status_PreDel"
+                    android:layout_marginLeft="20dp"
+                     android:digits="1234567890 "
+                    android:layout_marginRight="20dp"
+                    android:hint="Birth Weight" />
+
+                <Spinner
+                    android:id="@+id/spinner_DeliveryMode_PreDel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EditText_baby_weight_PreDel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:entries="@array/Delivery_Mode_Array"
+                    android:prompt="@string/leucocyte_Prompt" />
+
+                <EditText
+                    android:id="@+id/BabyName_PreDel"
+                    android:layout_width="fill_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyz"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinner_DeliveryMode_PreDel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="Baby Name" />
+
+                <Button
+                    android:id="@+id/Baby_Save_PreDel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BabyName_PreDel"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:text="Save" />
+
+                <TextView
+                    android:id="@+id/line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Baby_Save_PreDel"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="-----------------------------------"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/complications_PV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Relative_Baby"
+                android:text="Complications (Optional)" />
+
+            <CheckBox
+                android:id="@+id/checkBox_obctstructed_laboour_PV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/complications_PV"
+                android:layout_marginLeft="10dp"
+                android:text="Obstructed Labour"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Retained_placenta_PV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_obctstructed_laboour_PV"
+                android:layout_marginLeft="10dp"
+                android:text="Retained Placenta"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox_PPH_PV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_Retained_placenta_PV"
+                android:layout_marginLeft="10dp"
+                android:text="PPH"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox_BP_PV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_PPH_PV"
+                android:layout_marginLeft="10dp"
+                android:text="High/Low BP"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkBox_Eclampsia_PV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_BP_PV"
+                android:layout_marginLeft="10dp"
+                android:text="Eclampsia"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/other_PV"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkBox_Eclampsia_PV"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Other" />
+
+            <EditText
+                android:id="@+id/Details_optional_PV"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/other_PV"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Details (Optional)" />
+
+            <Button
+                android:id="@+id/button_add_date_prevdel"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/date_of_previous_delivery"
+                android:layout_alignBottom="@+id/date_of_previous_delivery"
+                android:layout_alignRight="@+id/spinner2_labour_duration"
+                android:text="ADD"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Save_previous_delivery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:text="Save"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

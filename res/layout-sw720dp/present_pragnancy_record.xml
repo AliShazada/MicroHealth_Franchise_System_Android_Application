@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_blood_mother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_presenetPreg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="120dp"
+        android:text="Last Mentrual Period"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_last_mentrual_period"
+        android:layout_width="520dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/text_blood_mother"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:hint="Last Mentrual Period"
+        android:textSize="40dp" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/text_expected"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_last_mentrual_period"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Expected Delivery Date : "
+        android:textColor="#000000"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_Expected_date_of_delivery"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/text_expected"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:hint="Expected Delivery Date"
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_Gravida"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_Expected_date_of_delivery"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:digits="1234567890 "
+        android:hint="Gravida :"
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_para"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_Gravida"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:digits="1234567890 "
+        android:hint="Para : "
+        android:textSize="40dp" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner_presentPreg"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_para"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:entries="@array/pregnanacy_types_arrays"
+        android:prompt="@string/pregnanacy_types_prompt" />
+
+    <Button
+        android:id="@+id/save_present_pregnancy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="220dp"
+        android:layout_marginTop="80dp"
+        android:text="Save"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_add_Mentural_period"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/text_expected"
+        android:layout_alignRight="@+id/text_expected"
+        android:text="ADD"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_presenetPreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="Present Pregnency Record"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

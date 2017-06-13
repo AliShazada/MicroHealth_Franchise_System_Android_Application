@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fincon.umeedsey_android_app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.fincon.umeedsey_android_app.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.CustomListView"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Splash_activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.DashBoard"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.MainMenu"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PrenatalListClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Login_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Add_MotherClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Genetic_History_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PostnatalListClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PostNatal_ListViewClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Medical_HistoryClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Present_pregnancy_record"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Previous_Delivery_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Allergies_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Allergies_Class2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Complaints"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Antenatal_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Urnalysis_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.HepatitisB_Service_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Phyical_Examination_class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Complete_Blood_Count_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Blood_Sugar_Test_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Ultrasound_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Medication_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Postnatal_Complaints_OM_Class"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Physical_Examination_of_Mother"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Delivery_Basic_info_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.DeliveryDetail_informationClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PreviousPregnencyClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.APGAR_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.QuestionsClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Tubal_PregnancyClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PostnatalAlerts"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Rubella"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.BloodType_Class"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.PrenatalAlertgenerationClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fincon.umeedsey_android_app.Postnatal_Alerts_GenerationClass"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

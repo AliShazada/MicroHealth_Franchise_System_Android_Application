@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText_TestDate_blood_sugar_test"
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/text_BST"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:hint="Test Date "
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_rbs_blood_sugar"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_TestDate_blood_sugar_test"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:digits="1234567890 "
+        android:hint="RBS (mg/dl) :"
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_fbs_blood_sugar"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_rbs_blood_sugar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:digits="1234567890 "
+        android:hint="FBS (mg/dl) (Optional) : "
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_postprandial_blood_sugar"
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/editText_fbs_blood_sugar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:digits="1234567890 "
+        android:hint="Postprandial (mg/dl)(Optional)"
+        android:textSize="40dp" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText_remarks_blood_sugar"
+        android:layout_width="fill_parent"
+        android:layout_height="280dp"
+        android:layout_below="@+id/editText_postprandial_blood_sugar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Remarks (Optional)"
+        android:textSize="40dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/button_save_cbc"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_discard_cbc"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_add_TestDate_blood_sugar"
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_alignBaseline="@+id/editText_TestDate_blood_sugar_test"
+        android:layout_alignBottom="@+id/editText_TestDate_blood_sugar_test"
+        android:layout_alignRight="@+id/editText_rbs_blood_sugar"
+        android:text="ADD"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_BST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Blood Sugar Test"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

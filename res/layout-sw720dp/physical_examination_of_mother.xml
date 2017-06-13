@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_pEom"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/textView_phyExa_mother"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_pEom"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/pallor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Pallor (Anemia) : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_pallor2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/pallor"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/uterine_involution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_pallor2"
+                android:layout_marginLeft="10dp"
+                android:text="Uterine Involution : "
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_uterine_involution2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/uterine_involution"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/vaginal_bleeding_peom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_uterine_involution2"
+                android:layout_marginLeft="10dp"
+                android:text="Vaginal Bleeding :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_vaginal_bleeding2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/vaginal_bleeding_peom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/lochia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_vaginal_bleeding2"
+                android:layout_marginLeft="10dp"
+                android:text="Lochia : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_lochia2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/lochia"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/perinium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_lochia2"
+                android:layout_marginLeft="10dp"
+                android:text="Perinium : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_perinium2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/perinium"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/craked_nipples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_perinium2"
+                android:layout_marginLeft="10dp"
+                android:text="Craked Nipples : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_craked_nipples2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/craked_nipples"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <EditText
+                android:id="@+id/pulse2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/spinner_craked_nipples2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Pulse (beats per minute) : "
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/Tempreture_peom2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/pulse2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Tempreture (Celsius) : "
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/BP_sys_peom2"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Tempreture_peom2"
+                android:layout_marginLeft="10sp"
+                android:hint="BP (Systolic)"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/BP_dys_peom2"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Tempreture_peom2"
+                android:layout_marginRight="10sp"
+                android:layout_toRightOf="@+id/BP_sys_peom2"
+                android:hint="(Diastolic)"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/hemoglobin_peom2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/BP_sys_peom2"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Hemoglobin (gm/dL) : "
+                android:textSize="40dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView_phyExa_mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Physical Examination of Mother"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_back_peom2"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textView_phyExa_mother"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button_save_peom2"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

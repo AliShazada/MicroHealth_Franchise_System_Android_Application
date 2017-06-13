@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_1_medical_history"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/textView1_pE"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="50dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_medical_history"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp" >
+
+            <TextView
+                android:id="@+id/textView1_jaundice_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Jaundice : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_jaundice_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_jaundice_physical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_jaundice_physical_p"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_jaundice_physical_a"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_goiter_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_jaundice_physical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Goiter : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_goiter_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_goiter_physical"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_goiter_physical_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_goiter_physical_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_varicose_veins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_goiter_physical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Vaicose Veins :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_vaicose_veins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_varicose_veins"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_vaicose_veins_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Present"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_vaicose_veins_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    android:text="Absent"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_conjunctiva_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_vaicose_veins"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Conjunctiva : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_conjunctiva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_conjunctiva_physical"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_conjunctiva_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_conjunctiva_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Abnormal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_breast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_conjunctiva"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Breast :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_breast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_breast"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_breast_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_breast_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Abnormal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_nipples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_breast"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Nipples :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_nipples"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_nipples"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_nipples_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Normal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_nipples_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:text="Abnormal"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_oro_dental_hygeine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_nipples"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="OroDental Hygiene :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_oro_dental_hygeine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_oro_dental_hygeine"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_oro_dental_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Good"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_oro_dental_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:text="Poor"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView1_lymph_nodes_physical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_oro_dental_hygeine"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Current Medication :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_Lymph_nodes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1_lymph_nodes_physical"
+                android:orientation="horizontal"
+                android:textSize="40dp" >
+
+                <RadioButton
+                    android:id="@+id/radio_Lymph_nodes_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Palpable"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+
+                <RadioButton
+                    android:id="@+id/radio_Lymph_nodes_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="NonPalpable"
+                    android:textColor="#000000"
+                    android:textSize="40dp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_discard_physical"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/Scrollview_1_medical_history"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1_pE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Physical Examination"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_save_physical"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Scrollview_1_medical_history"
+        android:layout_marginBottom="20dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_add_mother"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Mother Registeration"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/Scrollview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_below="@+id/text_add_mother" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" >
+
+            <EditText
+                android:id="@+id/Firstname_addM"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/MiddleName_addm"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Firstname_addM"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:hint="Middle Name (Optional)"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/lastname_addM"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/MiddleName_addm"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dateText_ddMot"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname_addM"
+                android:layout_marginLeft="20dp"
+                android:text="Date of Birth"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/date_addMot"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/dateText_ddMot"
+                android:layout_marginLeft="15dp"
+                android:hint="Set the Date"
+                android:inputType="date"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/CNIC_am"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/date_addMot"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="1234567890 "
+                android:hint="Patient CNIC(Optional) "
+                android:maxLength="13"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/pic_date"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_alignBaseline="@+id/date_addMot"
+                android:layout_alignBottom="@+id/date_addMot"
+                android:layout_alignRight="@+id/CNIC_am"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/calender_icon" >
+            </Button>
+
+            <TextView
+                android:id="@+id/text_blood_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/CNIC_am"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:text="Select Blood Group"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner1_blood_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_blood_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/mother_blood_arrays"
+                android:prompt="@string/country_prompt" />
+
+            <TextView
+                android:id="@+id/text_height_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1_blood_mother"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:text="Height"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_height_feet_mother"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_height_mother"
+                android:layout_marginLeft="15dp"
+                android:entries="@array/Height_feet_arrays"
+                android:prompt="@string/Height_feet_prompt" />
+
+            <EditText
+                android:id="@+id/weight_addMother"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/spinner_height_inches_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="1234567890 "
+                android:hint="Enter Weight(kg) in Numeric"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/maternal_status_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight_addMother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/martial_arrays"
+                android:prompt="@string/marital_prompt" />
+
+            <Spinner
+                android:id="@+id/race_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/maternal_status_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/Race_arrays"
+                android:prompt="@string/Race_prompt" />
+
+            <Spinner
+                android:id="@+id/religion_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/race_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/Religion_arrays"
+                android:prompt="@string/Religion_prompt" />
+
+            <EditText
+                android:id="@+id/Guardian_Firstname_AM"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/religion_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz"
+                android:editable="false"
+                android:hint="Guardian Firstname"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Guardian_Lastname_AM"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Guardian_Firstname_AM"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="abcdefghijklmnopqrstuvwxyz "
+                android:editable="false"
+                android:hint="Guardian Lastname"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/Guardian_CNIC_am"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Guardian_Lastname_AM"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="1234567890 "
+                android:editable="false"
+                android:hint="Guardian CNIC(Optional)"
+                android:inputType="text"
+                android:maxLength="13"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/dateText_ddMot_guardian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Guardian_CNIC_am"
+                android:layout_marginLeft="20dp"
+                android:inputType="date"
+                android:text="Date of Birth (Guardian)"
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/Gardian_date_addMot"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/dateText_ddMot_guardian"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:editable="false"
+                android:hint="Guardian DOB(Optional)"
+                android:inputType="date"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/guardianDOB_pic_date_btn"
+                android:layout_width="55dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/dateText_ddMot_guardian"
+                android:layout_toRightOf="@+id/Gardian_date_addMot"
+                android:background="@drawable/calender_icon" >
+            </Button>
+
+            <Spinner
+                android:id="@+id/guardian_relation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guardianDOB_pic_date_btn"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:entries="@array/Guardian_relation_arrays"
+                android:prompt="@string/Guardian_Relation_prompt" />
+
+            <Spinner
+                android:id="@+id/guardian_religion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guardian_relation"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/Religion_arrays"
+                android:prompt="@string/Religion_prompt" >
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/husband_Blood_Type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/guardian_religion"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/husband_blood_arrays"
+                android:prompt="@string/Husband_bp_prompt" />
+
+            <EditText
+                android:id="@+id/Mobile_no_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/husband_Blood_Type"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="1234567890 "
+                android:hint="Mobile no. (Optional)"
+                android:inputType="text"
+                android:maxLength="14"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/residence_no_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/Mobile_no_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:digits="1234567890 "
+                android:hint="Residence no. (Optional)"
+                android:inputType="text"
+                android:maxLength="17"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/select_country_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/residence_no_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Country : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/select_country_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_country_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/select_province_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_country_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Province : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/select_province_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_province_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/select_District_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_province_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="District : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/select_district_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_District_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" >
+            </Spinner>
+
+            <TextView
+                android:id="@+id/select_city_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_district_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Select City : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/select_city_addmother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_city_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/select_tehsil_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_city_addmother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Tehsil : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/select_Tehsil_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_tehsil_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/select_un_addmother_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_Tehsil_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="Union Council : "
+                android:textColor="#000000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/select_union_council_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/select_un_addmother_text"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <EditText
+                android:id="@+id/localOfficeAddress_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/select_union_council_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:editable="false"
+                android:hint="local Office"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/Address_mother"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/localOfficeAddress_mother"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Enter Address"
+                android:inputType="text"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinner_height_inches_mother"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/pic_date"
+                android:layout_below="@+id/text_height_mother"
+                android:entries="@array/Height_inches_arrays"
+                android:prompt="@string/Height_inches_prompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/cancenl_addmother_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save_addMother_btn"
+        android:layout_alignBottom="@+id/save_addMother_btn"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Back"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/save_addMother_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Scrollview_1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Save"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

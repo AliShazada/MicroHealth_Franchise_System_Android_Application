@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_HEPB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Hepatitis B Surface Antigen"
+        android:textColor="#000000"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_TestDate_hepatatis_b"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_HEPB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="Test Date " >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_hepatitis_hepB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_TestDate_hepatatis_b"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Hepatitis : "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_hep_hepB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_hepatitis_hepB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_diab_med_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_diab_med_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Negative"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/details_hep"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/radio_hep_hepB"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Remarks (Optional)" />
+
+    <Button
+        android:id="@+id/save_hep"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/details_hep"
+        android:layout_marginBottom="20dp"
+        android:text="Save"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_add_TestDate_hep"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_hepatitis_hepB"
+        android:layout_alignRight="@+id/details_hep"
+        android:text="ADD"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Skip_hep"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details_hep"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Skip"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_add_TestDate_hep"
+        android:layout_alignLeft="@+id/editText_TestDate_hepatatis_b"
+        android:layout_marginBottom="10dp"
+        android:text="Test Date :"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

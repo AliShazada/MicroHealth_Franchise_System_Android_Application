@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_DBinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Delivery Basic Information"
+        android:textColor="#000000"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/autofill_outcome_dbi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_delDate_dbi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Outcome :" />
+
+    <EditText
+        android:id="@+id/auto_duration_dbi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autofill_outcome_dbi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Duration : " />
+
+    <Button
+        android:id="@+id/button_save_dbi"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="25dp"
+        android:text="Save"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_discard_dbi"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText_delDate_dbi"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_DBinfo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:hint="Delivery Date " >
+    </EditText>
+
+    <Button
+        android:id="@+id/button_add_deldate_dbi"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_alignRight="@+id/autofill_outcome_dbi"
+        android:layout_alignTop="@+id/editText_delDate_dbi"
+        android:background="@drawable/calender_icon" />
+
+</RelativeLayout>

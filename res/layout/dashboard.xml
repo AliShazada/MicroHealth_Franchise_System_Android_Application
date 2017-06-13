@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6" >
+
+    <TextView
+        android:id="@+id/text_patientname_sd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_dashboard"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Patient Name : Ali Ahmad Shahzada "
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/Scrollview_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:layout_below="@+id/text_patientname_sd" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="480dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp" >
+
+            <Button
+                android:id="@+id/btn_dashboard_AntenatalVisit"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="Antenatal Visit"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_complaints"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_AntenatalVisit"
+                android:layout_marginTop="28dp"
+                android:text="Complaints"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_urinalysis"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_complaints"
+                android:layout_marginTop="31dp"
+                android:text="Urinalysis"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_physicalexaminatoin"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_urinalysis"
+                android:layout_marginTop="30dp"
+                android:text="Physical Examination"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_CBC"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_physicalexaminatoin"
+                android:layout_marginTop="30dp"
+                android:text="Complete Blood Count"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_HepatitisB"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_CBC"
+                android:layout_marginTop="30dp"
+                android:text="Hepatitis B"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_Blood_Typing"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_HepatitisB"
+                android:layout_marginTop="30dp"
+                android:text="Blood Typing"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_Rubella_Titre"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_Blood_Typing"
+                android:layout_marginTop="30dp"
+                android:text="Rubella Titre"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_BloodSugarTest"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_Rubella_Titre"
+                android:layout_marginTop="30dp"
+                android:text="Blood Sugar Test"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_UltrosoundScan"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_BloodSugarTest"
+                android:layout_marginTop="30dp"
+                android:text="Ultrosound Scan"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_MedicationAlert"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_UltrosoundScan"
+                android:layout_marginTop="30dp"
+                android:text="Medication Alert"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_Medication"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_MedicationAlert"
+                android:layout_marginTop="30dp"
+                android:text="Medication"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_OralGlucose"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_Medication"
+                android:layout_marginTop="30dp"
+                android:text="Oral Glucose"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_Miscarriage"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_OralGlucose"
+                android:layout_marginTop="30dp"
+                android:text="Miscarriage/Tubal Pregnancy"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_ViewPrescription"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_Miscarriage"
+                android:layout_marginTop="30dp"
+                android:text="View Prescription"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_dashboard_Allergies"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_dashboard_ViewPrescription"
+                android:layout_marginTop="30dp"
+                android:text="Allergies"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="DashBoard Alerts"
+        android:textColor="#000000"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

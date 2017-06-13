@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text_add_Child"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Add Child"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/Scrollview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_below="@+id/text_add_Child" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <EditText
+                android:id="@+id/MotherName_AddC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:hint="Mother Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/FirstName_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MotherName_AddC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="First Name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/Midname_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FirstName_addC"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Middle Name (Optional)"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/date_addC"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radio_gender_addC"
+                android:layout_marginLeft="15dp"
+                android:hint="Set the Date"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/lastname_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Midname_addC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Last Name " />
+
+            <TextView
+                android:id="@+id/textView_gender_addc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname_addC"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Gender : "
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radio_gender_addC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView_gender_addc"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio_gender_addC_y"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/radio_gender_addC_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="Female"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/pic_date"
+                android:layout_width="45dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/radio_gender_addC"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/date_addC"
+                android:background="@drawable/calender_icon" />
+
+            <EditText
+                android:id="@+id/formB_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date_addC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Form B (Optional)" />
+
+            <EditText
+                android:id="@+id/height_feet_addC"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formB_addC"
+                android:layout_marginLeft="15dp"
+                android:hint="Height(Feet)" />
+
+            <EditText
+                android:id="@+id/height_inces_addC"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formB_addC"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+                android:layout_toRightOf="@+id/height_feet_addC"
+                android:hint="Height(Inches)" />
+
+            <EditText
+                android:id="@+id/weight_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/height_feet_addC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:hint="Weight (Kg)" />
+
+            <Spinner
+                android:id="@+id/spinner_Blood_Type_addC"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/weight_addC"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:entries="@array/husband_blood_arrays"
+                android:prompt="@string/leucocyte_Prompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/save_addC_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/back_addC_btn"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Back" />
+
+</RelativeLayout>

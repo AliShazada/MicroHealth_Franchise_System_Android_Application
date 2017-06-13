@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_physical_examination_of_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Physical Examination of Child"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/Scrollview_physical_examination_child"
+        android:layout_width="fill_parent"
+        android:layout_height="390dp"
+        android:layout_below="@+id/textView_physical_examination_of_child"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_physical_examination_of_child"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/Cords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Cords : "
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_Cords"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cords"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Jaundice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_Cords"
+                android:layout_marginLeft="10dp"
+                android:text="Jaundice : "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Jaundice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Jaundice"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/EyeInfection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Jaundice"
+                android:layout_marginLeft="10dp"
+                android:text="Eye Infection :"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_EyeInfection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EyeInfection"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Suckling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_EyeInfection"
+                android:layout_marginLeft="10dp"
+                android:text="Suckling : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Suckling"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Suckling"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array_physicalChild"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Indrawing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Suckling"
+                android:layout_marginLeft="10dp"
+                android:text="In-drawing : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Indrawing"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Indrawing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/SkinInfection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Indrawing"
+                android:layout_marginLeft="10dp"
+                android:text="Skin Infection (Pustule) : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_SkinInfection"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SkinInfection"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/congenitalProblem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_SkinInfection"
+                android:layout_marginLeft="10dp"
+                android:text="Congenital Problems :"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_congenitalProblem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/congenitalProblem"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/breastfeeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_congenitalProblem"
+                android:layout_marginLeft="10dp"
+                android:text="Breast Feeding :"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_breastfeeding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breastfeeding"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:entries="@array/Questions_Array_physicalChild"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <EditText
+                android:id="@+id/edittext_weight"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_breastfeeding"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Weight(Kg)" />
+
+            <EditText
+                android:id="@+id/edittext_Head_Circumference"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_weight"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Head Circumference (cm) :" />
+
+            <EditText
+                android:id="@+id/edittext_Head_Rate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_Head_Circumference"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Heart Rate (Beats / Minute) : " />
+
+            <EditText
+                android:id="@+id/edittext_temp_physicalChild"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_Head_Rate"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Tempreture (Celcius) : " />
+
+            <EditText
+                android:id="@+id/edittext_RespiratoryRate_phy_child"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edittext_temp_physicalChild"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:hint="Repiratory Rate (Breaths Per Minute) :" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_back_phy_exam_child"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_save_phy_exam_child"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textStyle="bold" />
+
+</RelativeLayout>

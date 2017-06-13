@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_cbc"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/text_CBC"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_cbc"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/text_CBC_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Test Date : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_TestDate_complete_Blood_Count"
+                android:layout_width="400dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/text_CBC_date"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Test Date "
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_Hemoglobin_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_TestDate_complete_Blood_Count"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Hemoglobin(g/dl) :"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_haematrocrit_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_Hemoglobin_cbc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Haemotocrit (%) (Optional) : "
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_mcv_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_haematrocrit_cbc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Mean Corpuscular Volume (fl)(Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_tlc_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_mcv_cbc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="TLC (x10^9) (Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_platelet_count_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_tlc_cbc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Platelet Count (Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_remarks_cbc"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:layout_below="@+id/editText_platelet_count_cbc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Remarks (Optional)"
+                android:textSize="40dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_TestDate_cbc"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:layout_alignRight="@+id/editText_Hemoglobin_cbc"
+                android:layout_alignTop="@+id/editText_TestDate_complete_Blood_Count"
+                android:text="ADD"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_save_cbc"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_discard_cbc"
+        android:layout_width="250sp"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_CBC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Complete Blood Count"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

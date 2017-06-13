@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1_protein_utinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_utinalysis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Protein : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_protein_utinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_protein_utinalysis"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_protein_utinalysis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_protein_utinalysis_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Negative"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1_glucose_urinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_protein_utinalysis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Glucose : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radio_glucose_urinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_glucose_urinalysis"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_glucose_urinalysis_y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Positive"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radio_glucose_urinalysis_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Negative"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1_leukocyte_utinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_glucose_urinalysis"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Leukocyte/(hpf) (Optional) : "
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner_leukocyte_urinalysis"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1_leukocyte_utinalysis"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10dp"
+        android:entries="@array/urinalysis_array"
+        android:prompt="@string/leucocyte_Prompt" />
+
+    <EditText
+        android:id="@+id/remarks_urinalysis"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/spinner_leukocyte_urinalysis"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10dp"
+        android:hint="Remarks (Optional)" />
+
+    <Button
+        android:id="@+id/button_save_urinalysis"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Save"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1_utinalysis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Urinalysis"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

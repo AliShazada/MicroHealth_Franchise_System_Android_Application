@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6" >
+
+    <ScrollView
+        android:id="@+id/Scrollview__complaints"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/complaints_text" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_complaints"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp" >
+
+            <CheckBox
+                android:id="@+id/headache_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Headache"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/high_BP_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headache_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="High Blood Pressure"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/high_Blood_Sugar_levels_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/high_BP_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="High Blood Sugar levels"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/hunger_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/high_Blood_Sugar_levels_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Hunger"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Increased_Appetite_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hunger_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Increased Appetite"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/Increased_Appetite_complaints" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/hunger_complaints" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="Increased Appetite" -->
+            <!-- android:textColor="#000000" -->
+            <!-- android:textSize="40dp" -->
+            <!-- android:textStyle="bold" /> -->
+
+            <CheckBox
+                android:id="@+id/Increased_Morning_Sickness_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Increased_Appetite_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Increased Morning Sickness"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Look_pale_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Increased_Morning_Sickness_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Look Pale"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Nausea_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Look_pale_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Nausea"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Abdominal_pain_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Nausea_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Abdominal Pain"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Baby_is_smaller_than_normal_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Abdominal_pain_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Baby is smaller than normal"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Baby_is_moving_less_than_normal_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Baby_is_smaller_than_normal_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Baby is moving less"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Back_pain_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Baby_is_moving_less_than_normal_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Back Pain"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Blurred_Vision_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Back_pain_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Blurred Vision"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Contractions_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Blurred_Vision_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Contractions"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Cramping_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Contractions_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Cramping"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/Cramping_complaints" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/Contractions_complaints" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="Cramping" -->
+            <!-- android:textColor="#000000" -->
+            <!-- android:textSize="40dp" -->
+            <!-- android:textStyle="bold" /> -->
+
+            <CheckBox
+                android:id="@+id/Dehydration_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Cramping_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Dehydration"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Dizziness_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Dehydration_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Dizziness"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Excessive_Vomitting_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Dizziness_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Excessive Vomitting"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Excessive_weight_gain_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Excessive_Vomitting_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Excessive Weight Gain"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Extreme_thirst_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Excessive_weight_gain_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Extreme Thirst"
+                android:textColor="#000000"
+                android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Fainting_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Extreme_thirst_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Fainting"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                 />
+
+            <CheckBox
+                android:id="@+id/Fatigue_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Fainting_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Fatigue"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Feel_tired_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Fatigue_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Feel Tired"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Fetal_movments_felt_in_Different_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Feel_tired_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Fetal movments felt in Different Parts"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Fluid_or_Tissue_passing_through_vagina_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Fetal_movments_felt_in_Different_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Fluid or Tissue passing through vagina"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <!-- <CheckBox -->
+            <!-- android:id="@+id/Fluid_or_Tissue_passing_through_vagina_complaints" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_below="@+id/Fetal_movments_felt_in_Different_complaints" -->
+            <!-- android:layout_marginLeft="10dp" -->
+            <!-- android:text="Fluid or Tissue passing through vagina" -->
+            <!-- android:textColor="#000000" -->
+            <!-- android:textSize="40dp" -->
+            <!-- android:textStyle="bold" /> -->
+
+            <CheckBox
+                android:id="@+id/Pelvic_pressure_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Fluid_or_Tissue_passing_through_vagina_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Pelvic Pressure"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Reduced_Apptitite_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Pelvic_pressure_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Reduced Apptitite"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Serizures_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Reduced_Apptitite_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Serizures"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Shortness_of_breath_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Serizures_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Shortness of Breath"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Stomach_Pain_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Shortness_of_breath_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Stomach Pain"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Too_much_Protein_in_urine_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Stomach_Pain_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Too much Protein in urine"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Utirine_tenderness_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Too_much_Protein_in_urine_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Utirine Tenderness"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Uterus_is_larger_than_expected_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Utirine_tenderness_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Uterus is larger than expected"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Vaginal_Bleeding_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Uterus_is_larger_than_expected_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Vaginal Bleeding"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+
+            <CheckBox
+                android:id="@+id/Weight_Loss_complaints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Vaginal_Bleeding_complaints"
+                android:layout_marginLeft="10dp"
+                android:text="Weight Loss"
+                android:textColor="#000000"
+                 android:textSize="40dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Skip_complaints"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="20dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/save_complaints"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/Skip_complaints"
+        android:layout_alignBottom="@+id/Skip_complaints"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/complaints_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Complaints"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6" >
+
+    <Button
+        android:id="@+id/btn_mother_reg_main"
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="320dp"
+        android:text="Mother Registeration"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_child_registeration"
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btn_mother_reg_main"
+        android:layout_below="@+id/btn_mother_reg_main"
+        android:layout_marginTop="38dp"
+        android:text="Child Registeration"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_prenatal"
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btn_child_registeration"
+        android:layout_below="@+id/btn_child_registeration"
+        android:layout_marginTop="38dp"
+        android:text="Pre Natal"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_postnatal"
+        android:layout_width="520dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/btn_prenatal"
+        android:layout_below="@+id/btn_prenatal"
+        android:layout_marginTop="38dp"
+        android:text="Post Natal"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_logout_mainmenu"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="40dp"
+        android:text="Logout"
+        android:textSize="35dp"
+       />
+
+</RelativeLayout>

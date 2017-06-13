@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_post_symtom_child"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Postnatal Symptoms of Child"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/Scrollview_post_child"
+        android:layout_width="fill_parent"
+        android:layout_height="390dp"
+        android:layout_below="@+id/textView_post_symtom_child"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_pSymtomChild"
+            android:layout_width="wrap_content"
+            android:layout_height="390dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/fits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Fits : "
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_fits"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fits"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/poor_feeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_fits"
+                android:layout_marginLeft="10dp"
+                android:text="Poor Feeding : "
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_poor_feeding"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/poor_feeding"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/drowsiness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_poor_feeding"
+                android:layout_marginLeft="10dp"
+                android:text="Drowsiness :"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_drowsiness"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/drowsiness"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Breathing_Difficulty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_drowsiness"
+                android:layout_marginLeft="10dp"
+                android:text="Breathing_Difficulty : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Breathing_Difficulty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Breathing_Difficulty"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Urine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Breathing_Difficulty"
+                android:layout_marginLeft="10dp"
+                android:text="Urine : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Urine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Urine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Questions_Array_UrineandStool"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Stool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Urine"
+                android:layout_marginLeft="10dp"
+                android:text="Stool : "
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_Stool"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Stool"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:entries="@array/Questions_Array_UrineandStool"
+                android:prompt="@string/leucocyte_Prompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_back_postnatal_child"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Back"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_save_postnatal_child"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textStyle="bold" />
+
+</RelativeLayout>

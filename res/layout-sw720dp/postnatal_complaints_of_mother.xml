@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_pcom"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/textView_postComplaints_mother"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_pcom"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/fever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Fever : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_fever"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/fever"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/body_ache_pcom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_fever"
+                android:layout_marginLeft="20dp"
+                android:text="Baby Ache : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_body_ache_pcom"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/body_ache_pcom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/excessive_fatigue_pcom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_body_ache_pcom"
+                android:layout_marginLeft="20dp"
+                android:text="Excessive Fatigue :"
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_excessive_fatigue_pcom"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/excessive_fatigue_pcom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/difficulty_in_breathing_pcom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_excessive_fatigue_pcom"
+                android:layout_marginLeft="20dp"
+                android:text="Difficulty in Breathing : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_difficulty_in_breathing_pcom"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/difficulty_in_breathing_pcom"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/swelling_hand_face_feet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_difficulty_in_breathing_pcom"
+                android:layout_marginLeft="20dp"
+                android:text="Swelling on Hands/Face/Feet : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_swelling_hand_face_feet"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/swelling_hand_face_feet"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/dysuria_Frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_swelling_hand_face_feet"
+                android:layout_marginLeft="20dp"
+                android:text="Dysuria/Frequency : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_dysuria_Frequency"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/dysuria_Frequency"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/urinary_incontinence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_dysuria_Frequency"
+                android:layout_marginLeft="20dp"
+                android:text="Urinary Incontinence : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_urinary_incontinence"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/urinary_incontinence"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/lower_Abdomin_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_urinary_incontinence"
+                android:layout_marginLeft="20dp"
+                android:text="Lower Abdomin Pain : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_lower_Abdomin_pain"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/lower_Abdomin_pain"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/heavy_vaginal_bleeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_lower_Abdomin_pain"
+                android:layout_marginLeft="20dp"
+                android:text="Heavy Vaginal Bleeding : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_heavy_vaginal_bleeding"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/heavy_vaginal_bleeding"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+
+            <TextView
+                android:id="@+id/breast_engorgement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_heavy_vaginal_bleeding"
+                android:layout_marginLeft="20dp"
+                android:text="Breast Engorgement : "
+                android:textColor="#000000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_breast_engorgement"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/breast_engorgement"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:entries="@array/Postnatal_Complaints_OM_Class"
+                android:prompt="@string/Postnatal_Complaints_OM_Class_Prompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_save_pcom"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/textView_postComplaints_mother"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_back_pcom"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignBaseline="@+id/button_save_pcom"
+        android:layout_alignBottom="@+id/button_save_pcom"
+        android:layout_alignRight="@+id/textView_postComplaints_mother"
+        android:text="Back"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_postComplaints_mother"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Postnatal Complaints of Mother"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

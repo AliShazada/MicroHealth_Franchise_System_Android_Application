@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UmeedSey</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="country_prompt">Select BloodGroup</string>
+    <string name="Husband_bp_prompt">Husband Blood Type</string>
+    <string name="marital_prompt">Select</string>
+    <string name="Race_prompt">Select</string>
+    <string name="Religion_prompt">Select</string>
+    <string name="Guardian_Relation_prompt">Select</string>
+    <string name="Height_feet_prompt">Select</string>
+    <string name="Height_inches_prompt">Select</string>
+    <string name="pregnanacy_types_prompt">Select the Pregnancy Type</string>
+    <string name="Labour_Duration_prompt">Select the Labour Duration</string>
+    <string name="Delivery_Place_Prompt">Select the Delivery Place</string>
+    <string name="No_of_Babies_Prompt">Select the no. of Babies</string>
+    <string name="Drug_Name_Prompt">Select the Drug Name</string>
+    <string name="Presentation_Prompt">Select Option</string>
+    <string name="leucocyte_Prompt">Select Option</string>
+    <string name="Postnatal_Complaints_OM_Class_Prompt">Select Option</string>
+
+    <string-array name="country_arrays">
+        <item>Blood Group</item>
+        <item>A +tive</item>
+        <item>A -tive</item>
+        <item>B +tive</item>
+        <item>B -tive</item>
+        <item>O -tive</item>
+        <item>O +tive</item>
+        <item>AB +tive</item>
+        <item>AB -tive</item>
+    </string-array>
+    <string-array name="bloodtype_blood_arrays">
+        <item>Select Blood Group</item>
+        <item>A +tive</item>
+        <item>A -tive</item>
+        <item>B +tive</item>
+        <item>B -tive</item>
+        <item>O -tive</item>
+        <item>O +tive</item>
+        <item>AB +tive</item>
+        <item>AB -tive</item>
+    </string-array>
+    <string-array name="mother_blood_arrays">
+        <item>Blood Group (Optional)</item>
+        <item>A +tive</item>
+        <item>A -tive</item>
+        <item>B +tive</item>
+        <item>B -tive</item>
+        <item>O -tive</item>
+        <item>O +tive</item>
+        <item>AB +tive</item>
+        <item>AB -tive</item>
+    </string-array>
+    <string-array name="husband_blood_arrays">
+        <item>Blood Group (Optional)</item>
+        <item>A +tive</item>
+        <item>A -tive</item>
+        <item>B +tive</item>
+        <item>B -tive</item>
+        <item>O -tive</item>
+        <item>O +tive</item>
+        <item>AB +tive</item>
+        <item>AB -tive</item>
+    </string-array>
+    <string-array name="martial_arrays">
+        <item>Select Marital Status</item>
+        <item>Married</item>
+        <item>UnMarried</item>
+        <item>Widowed</item>
+        <item>Divorced</item>
+    </string-array>
+    <string-array name="Race_arrays">
+        <item>Select Race (Optional)</item>
+        <item>Pakistani</item>
+        <item>Afghanistani</item>
+        <item>Asian indian</item>
+    </string-array>
+    <string-array name="Religion_arrays">
+        <item>Select Religion (Optional)</item>
+        <item>Islam</item>
+        <item>Christianity</item>
+        <item>Hinduism</item>
+        <item>Ahmaddiya</item>
+        <item>Others</item>
+    </string-array>
+    <string-array name="Guardian_relation_arrays">
+        <item>Guardian Relation</item>
+        <item>Father</item>
+        <item>Husband</item>
+        <item>Uncle</item>
+        <item>Brother</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="Height_feet_arrays">
+        <item>In Feet</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="Height_inches_arrays">
+        <item>In inches</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="pregnanacy_types_arrays">
+        <item>Select Pregnancy Type</item>
+        <item>Primigravida/Nulliparous</item>
+        <item>Multigravida</item>
+    </string-array>
+    <string-array name="Labour_Duration_arrays">
+        <item>Select Labour Duration</item>
+        <item>Less than 12 hours</item>
+        <item>More than 12 hours</item>
+    </string-array>
+    <string-array name="Delivery_Place_arrays">
+        <item>Select Delivery Place</item>
+        <item>Home</item>
+        <item>Birthing Station</item>
+        <item>Hospital(EmoNC)</item>
+        <item>Hospital(CEmoNC)</item>
+    </string-array>
+    <string-array name="No_of_Babies_arrays">
+        <item>Select No.of Babies</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="Drug_Name_arrays">
+        <item>Select Drug</item>
+        <item>Primigravida/Nulliparous</item>
+        <item>Multigravida</item>
+    </string-array>
+    <string-array name="Presentation_arrays">
+        <item>Select Presentation</item>
+        <item>Cephalic</item>
+        <item>Breech</item>
+        <item>Face-shoulder</item>
+    </string-array>
+    <string-array name="leucocyte_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="duration_dbi">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="Postnatal_Complaints_OM_Class">
+        <item>No Answer</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Previous_Pregnancy_Duration">
+        <item>Select Pregnancy Duration</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="urinalysis_array">
+        <item>Select Value</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="Placental_Location">
+        <item>Select Placental Location</item>
+        <item>Anterior fundal</item>
+        <item>Posterior fundal</item>
+        <item>Anterior low lying</item>
+        <item>Posterior low lying</item>
+        <item>Placenta previa</item>
+    </string-array>
+    <string-array name="Maturity">
+        <item>Select Maturity</item>
+        <item>Early</item>
+        <item>Intermediate</item>
+        <item>Mature</item>
+    </string-array>
+    <string-array name="Fetal_Heart_Rate">
+        <item>Select Fetal Heart Rate</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="Liquor">
+        <item>Select Liquor</item>
+        <item>Adequate</item>
+        <item>Inadequate</item>
+        <item>Poly hydroamnios</item>
+        <item>Oliggo hydroamnios</item>
+        <item>Placenta previa</item>
+    </string-array>
+    <string-array name="HeartRate_Array">
+        <item>Select Heart Rate</item>
+        <item>No</item>
+        <item>Less than 100</item>
+        <item>Greater than 100</item>
+    </string-array>
+    <string-array name="Breathing_Array">
+        <item>Select Breathing</item>
+        <item>No</item>
+        <item>Slow and Irregular</item>
+        <item>Good and Crying well</item>
+    </string-array>
+    <string-array name="MuscleTone_Array">
+        <item>Select Muscle Tone</item>
+        <item>No</item>
+        <item>Weak</item>
+        <item>Active</item>
+    </string-array>
+    <string-array name="Grimacing_Array">
+        <item>Select Responce to Stimulation</item>
+        <item>No</item>
+        <item>Less Response</item>
+        <item>Coughing/Sneezing</item>
+    </string-array>
+    <string-array name="ColorofBaby_Array">
+        <item>Select Baby Color</item>
+        <item>Blue</item>
+        <item>Body pink-Hand and feet blue</item>
+        <item>Pink</item>
+    </string-array>
+    <string-array name="Questions_Array">
+        <item>No Answer</item>
+        <item>No</item>
+        <item>Yes</item>
+    </string-array>
+    <string-array name="Questions_Array_UrineandStool">
+        <item>No Answer</item>
+        <item>Pass</item>
+        <item>Not Pass</item>
+    </string-array>
+    <string-array name="Questions_Array_physicalChild">
+        <item>No Answer</item>
+        <item>Good</item>
+        <item>Poor</item>
+    </string-array>
+    <string-array name="Baby_Status_Array">
+        <item>Select Baby Status</item>
+        <item>Alive</item>
+        <item>Death/StillBirth</item>
+    </string-array>
+    <string-array name="Delivery_Mode_Array">
+        <item>Select Delivery Mode</item>
+        <item>NVD</item>
+        <item>Forceps</item>
+        <item>Vacuum</item>
+        <item>LSCS</item>
+    </string-array>
+
+</resources>

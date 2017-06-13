@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_cbc"
+        android:layout_width="fill_parent"
+        android:layout_height="980dp"
+        android:layout_below="@+id/Text_medication"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_cbc"
+            android:layout_width="wrap_content"
+            android:layout_height="980dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/Text_drugs_medication"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Drugs"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_drugs_medication"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Text_drugs_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/pregnanacy_types_arrays"
+                android:prompt="@string/pregnanacy_types_prompt" />
+
+            <TextView
+                android:id="@+id/Text_date_medication"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_drugs_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Date : "
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_date_medication"
+                android:layout_width="400dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Text_date_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Date"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_noOfTablets_medication"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_date_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Number of Tablets :"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editText_strength_medication"
+                android:layout_width="280dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_noOfTablets_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Strength"
+                android:textSize="40dp" />
+
+            <EditText
+                android:id="@+id/editText_dose_medication"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:layout_below="@+id/editText_strength_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890 "
+                android:hint="Dose"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/Text_startdate_medication"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_dose_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Start Date : "
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_startdate_medication"
+                android:layout_width="400dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Text_startdate_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Start Date"
+                android:textSize="40dp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/Text_enddate_medication"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_startdate_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="End Date : "
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText_enddate_medication"
+                android:layout_width="400dp"
+                android:layout_height="90dp"
+                android:layout_below="@+id/Text_enddate_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="End Date"
+                android:textSize="40dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/editText_comments_medication"
+                android:layout_width="fill_parent"
+                android:layout_height="280dp"
+                android:layout_below="@+id/editText_enddate_medication"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Comments (Optional)" />
+
+            <Button
+                android:id="@+id/button_end_date_medication"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_above="@+id/editText_comments_medication"
+                android:layout_alignRight="@+id/editText_comments_medication"
+                android:text="Add"
+                android:textSize="40dp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/button_date_medication"
+                android:layout_width="250dp"
+                android:layout_height="90dp"
+                android:layout_above="@+id/editText_noOfTablets_medication"
+                android:layout_alignRight="@+id/editText_noOfTablets_medication"
+                android:text="Add"
+                android:textSize="40dp"
+                android:textStyle="bold" >
+            </Button>
+
+            <EditText
+                android:id="@+id/editText_strength_unit_medication"
+                android:layout_width="260dp"
+                android:layout_height="90dp"
+                android:layout_above="@+id/editText_dose_medication"
+                android:layout_alignRight="@+id/editText_dose_medication"
+                android:layout_marginTop="10dp"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+                android:ems="10"
+                android:hint="Unit"
+                android:textSize="40dp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/button_add_start_date_medication"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_alignRight="@+id/editText_dose_medication"
+                android:layout_below="@+id/Text_startdate_medication"
+                android:text="Add"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_save_medication"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:text="Save"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_back_medication"
+        android:layout_width="250sp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:text="Skip"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Text_medication"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Medication"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

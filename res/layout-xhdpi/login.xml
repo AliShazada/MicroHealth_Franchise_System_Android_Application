@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8e6"
+    tools:context="com.fincon.umeedsey.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <EditText
+        android:id="@+id/password_login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/username_login"
+        android:layout_below="@+id/username_login"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:fontFamily="Times New Roman"
+        android:hint="Enter your Password"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/username_login"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:ems="10"
+        android:fontFamily="Times New Roman"
+        android:hint="Enter your Username"
+        android:inputType="text"
+        android:textSize="20dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/login_button_login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Login"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

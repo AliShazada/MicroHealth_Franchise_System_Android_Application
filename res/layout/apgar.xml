@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#add8ee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/Scrollview_apgar"
+        android:layout_width="fill_parent"
+        android:layout_height="450dp"
+        android:layout_below="@+id/textView_Apgar"
+        android:layout_marginTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_apgar"
+            android:layout_width="wrap_content"
+            android:layout_height="450dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <TextView
+                android:id="@+id/heartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Heart Rate"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_heartrate_apgar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/heartrate"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/HeartRate_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/breathing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_heartrate_apgar"
+                android:layout_marginLeft="10dp"
+                android:text="Breathing"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_breathing_apgar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breathing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Breathing_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/MuscleTone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_breathing_apgar"
+                android:layout_marginLeft="10dp"
+                android:text="Muscle Tone"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_MuscleTone_apgar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MuscleTone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/MuscleTone_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/Grimacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_MuscleTone_apgar"
+                android:layout_marginLeft="10dp"
+                android:text="Grimacing/Response to Stimulation"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_Grimacing_apgar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Grimacing"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/Grimacing_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+
+            <TextView
+                android:id="@+id/color_of_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2_Grimacing_apgar"
+                android:layout_marginLeft="10dp"
+                android:text="Color of Baby"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2_color_of_baby_apgar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/color_of_baby"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:entries="@array/ColorofBaby_Array"
+                android:prompt="@string/leucocyte_Prompt" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_save_apsar"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Scrollview_apgar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:textSize="22dp"
+        android:text="Save"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_Apgar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="APGAR"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
